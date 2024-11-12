@@ -1,0 +1,253 @@
+#root {
+  padding: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #979797;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+  margin-right: 30.5px;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration-line 0.3s ease;
+}
+
+nav > a:hover {
+  color: #03a8d8;
+}
+
+nav > a.active {
+  text-decoration-line: underline;
+  color: #03a8d8;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 22px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #979797;
+  margin: 30px 0;
+}
+
+
+button,
+input[type="submit"] {
+  background: linear-gradient(135deg, #03a8d8, #0072a1);
+  border-radius: 25px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 12px 24px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: linear-gradient(135deg, #0072a1, #03a8d8);
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:active,
+input[type="submit"]:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+input,
+select {
+  font-family: "Open Sans", sans-serif;
+  background: #ffffff;
+  border: 1px solid #979797;
+  border-radius: 10px;
+  padding: 10px 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #03a8d8;
+  box-shadow: 0 0 8px rgba(3, 168, 216, 0.3);
+}
+
+
+.tile-container {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tile-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.tile-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #0072a1;
+}
+
+.tile {
+  margin: 0;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+
+.delete-button {
+  align-self: flex-end;
+  background: #d9534f;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.delete-button:hover {
+  background: #c9302c;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+.delete-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+div.tile-container button {
+  margin-top: 10px;
+}
+
+.tile-container p:last-of-type {
+  margin-bottom: 0;
+}
+
+.prompt {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.actions-container {
+  display: flex;
+  column-gap: 15px;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.button {
+  background: #0072a1;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background: #005f8c;
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tile-list-container {
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav > a {
+    margin-bottom: 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
